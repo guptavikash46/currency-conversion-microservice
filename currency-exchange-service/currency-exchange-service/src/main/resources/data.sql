@@ -1,0 +1,1 @@
+insert into exchange_value VALUES(1, 73.45, 'usd',  8000, 'inr');
