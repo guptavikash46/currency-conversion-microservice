@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.vikas</groupId>
-	<artifactId>netflix-eureka-naming-server</artifactId>
+	<artifactId>netflix-zuul-api-gateway-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>netflix-eureka-naming-server</name>
-	<description>service registry and discovery</description>
+	<name>netflix-zuul-api-gateway-server</name>
+	<description>Implementing Zuul api</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -26,19 +26,16 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-<!--			<exclusions>-->
-<!--				<exclusion>-->
-<!--					<groupId>com.fasterxml.jackson.dataformat</groupId>-->
-<!--					<artifactId>jackson-dataformat-xml</artifactId>-->
-<!--				</exclusion>-->
-<!--			</exclusions>-->
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
